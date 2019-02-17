@@ -3,31 +3,26 @@
         <!-- wwManager:start -->
         <wwSectionEditMenu v-bind:sectionCtrl="sectionCtrl"></wwSectionEditMenu>
         <!-- wwManager:end -->
-        
         <wwObject class="background" v-bind:ww-object="section.data.background" ww-category="background"></wwObject>
-        
         <div class="container section-padding">
             <div class="block-img-container">
                 <div class="text-center">
                     <h1>
                         <wwObject v-bind:ww-object="section.data.title"></wwObject>
                     </h1>
-                    
                     <wwObject v-bind:ww-object="section.data.subtitle"></wwObject>
-                    
                     <div class="button-container">
                         <wwObject class="button-wrapper" v-bind:ww-object="section.data.button"></wwObject>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 
 <script>
 export default {
-    name: "headband_B",
+    name: "__COMPONENT_NAME__",
     props: {
         sectionCtrl: Object
     },
